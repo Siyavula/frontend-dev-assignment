@@ -1,15 +1,21 @@
-@import "mixins";
 @import "settings";
+@import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic);
 @import "foundation";
+@import "mixins";
 
 // Basic HTML selectors (not handled by _settings)
+h1.title {
+  margin-top: $margin-default*2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  border-bottom: 1px solid darken($body-bg, 20%);
+}
+
 
 // Global page structure (grid setup)
 div.section {
   @include grid-row();
-  h1.title {
-    @include grid-column(11, true, false, 1, 0, 0, false, left);
-  }
   div.section {
     @include grid-column(
       // Control the number of columns
@@ -37,22 +43,37 @@ div.section {
       //$float:
       left
     );
+    h1.title {
+      // @include grid-column(11, true, false, 1, 0, 0, false, left);
+
+    }
     figure {
       margin: 0 0 1em 0;
       padding: 0;
-      @include grid-column(
-        13,
-        true,
-        false,
-        0,
-        0,
-        1,
-        false,
-        left
-      );
+      @include grid-column(13, true, false, 0, 0, 1, false, left);
+      img {
+        padding: rem-calc(3rem);
+        border: 1px solid lighten($body-font-color, 50%);
+        margin-bottom: rem-calc(3rem);
+        @include box-shadow-default;
+      }
+      figcaption {
+        text-align: center;
+        color: lighten($body-font-color, 50%);
+        font-style: italic;
+      }
     }
   }
 }
 
-// From here, alter the front-end with our own usage of Foundation or Custom mixins (found in _mixins.css)
-// As far as possible, keep the selectors in the same order as they same as the sections on the page
+.note {
+  @include box-note;
+  p:first-of-type::before {
+    content: "Note: ";
+    font-weight: bold;
+  }
+}
+
+.mathidentity {
+  @include box-default;
+}
