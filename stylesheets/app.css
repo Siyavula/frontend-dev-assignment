@@ -9118,15 +9118,45 @@ div.section:after {
 }
 /* line 10, ../lib/scss/app.scss */
 div.section h1.title {
+  position: relative;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 100%;
+  width: 91.66667%;
+  float: right;
+  left: 0%;
+  right: auto;
+  right: 0%;
+  left: auto;
   float: left;
+  margin-left: 8.33333% !important;
 }
 /* line 13, ../lib/scss/app.scss */
 div.section div.section {
+  position: relative;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 100%;
+  width: 91.66667%;
+  float: right;
+  left: 0%;
+  right: auto;
+  right: 0%;
+  left: auto;
   float: left;
+  margin-left: 8.33333% !important;
+}
+/* line 40, ../lib/scss/app.scss */
+div.section div.section figure {
+  margin: 0 0 1em 0;
+  padding: 0;
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 108.33333%;
+  float: right;
+  left: 0%;
+  right: auto;
+  right: 8.33333%;
+  left: auto;
+  float: left;
+  margin-left: 0% !important;
 }
