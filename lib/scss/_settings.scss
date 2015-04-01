@@ -96,7 +96,7 @@ $total-columns: 12;
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -125,8 +125,8 @@ $total-columns: 12;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
+$body-bg: $white;
+$body-font-color: #444; // $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -197,8 +197,8 @@ $total-columns: 12;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
-// $header-font-weight: $font-weight-normal;
+$header-font-family: 'Tinos', 'Georgia', serif;
+$header-font-weight: 400; // $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 // $header-line-height: 1.4;

@@ -1,3 +1,31 @@
 // This file is used for mixins not covered by the Foundation library
 // As well as setting up variables for this instance, without interfering
-// with the main app file
+// with the main app file. Loaded before foundation so the variables set here can be
+// passed into Foundation.
+$margin-default: 22px;
+
+@mixin box-shadow-default {
+  -webkit-box-shadow: 0 8px 6px -3px #dedede;
+     -moz-box-shadow: 0 8px 6px -3px #dedede;
+          box-shadow: 0 8px 6px -3px #dedede;
+}
+
+@mixin box-color($color) {
+  background-color: darken($color, 10%);
+  border: 1px solid darken($color, 20%);
+  @include box-shadow-default;
+  padding: $margin-default/2 $margin-default/2 0 $margin-default/2;
+  margin-bottom: $margin-default;  
+}
+
+@mixin box-note {
+  border-top: 1px solid darken($body-bg, 20%);
+  border-bottom: 1px solid darken($body-bg, 20%);
+  padding: $margin-default/2 0 0 ;
+  margin-bottom: $margin-default; 
+  font-style: italic;
+}
+
+@mixin box-default {
+  @include box-color($body-bg);
+}
