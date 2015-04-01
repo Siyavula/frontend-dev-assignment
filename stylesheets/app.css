@@ -9098,3 +9098,35 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 8, ../lib/scss/app.scss */
+div.section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 75rem;
+}
+/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
+div.section:before, div.section:after {
+  content: " ";
+  display: table;
+}
+/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
+div.section:after {
+  clear: both;
+}
+/* line 10, ../lib/scss/app.scss */
+div.section h1.title {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+}
+/* line 13, ../lib/scss/app.scss */
+div.section div.section {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+}
