@@ -1,60 +1,74 @@
 @import "settings";
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 @import "foundation";
 @import "mixins";
+// @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+// Global page structure (grid setup)
+#chapter {
+  @include grid-row();
+}
+
+.wrapper {
+  // @include grid-column(9, true, false, 0, 0, 0, right);
+}
+
+#index {
+  font-size: 0.9em;
+  // @include grid-column(3, true, false, 0, 0, 0, left);
+  // position: fixed;
+  margin-top: $margin-default*4;
+  margin-bottom: $margin-default*4;
+  h1 {
+    font-size: $h5-font-size;
+    margin: 0;
+    padding: $margin-default/2;
+    font-family: $font-family-sans-serif;
+    background: darken($side-nav-link-bg-hover, 10%);
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    margin-bottom: 0;
+    border-bottom: 1px dotted $base;
+  }
+}
 
 // Basic HTML selectors (not handled by _settings)
 h1 {
-  @include grid-row();
-  
-  margin-top: $margin-default*6;
   margin-bottom: $margin-default*2;
   // text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 1px solid $header-font-color;
+  // border-bottom: 1px solid $header-font-color;
 }
 
 h2 {
-  @include grid-row(collapse);
 }
 
-// Global page structure (grid setup)
-#index {
-  h1 {
-    margin: $margin-default 0;
-    border: none;
-    font-size: $h4-font-size;
-    text-transform: uppercase;
-    letter-spacing: none;
-  }
+.section:first-child {
 }
 
 .section {
-  @include grid-row();
-  div.section {
-    h1.title {
-      // @include grid-column(11, true, false, 1, 0, 0, false, left);
-
+  h1.title {
+    // @include grid-column(11, true, false, 1, 0, 0, false, left);
+  }
+  figure {
+    margin: 0 0 1em 0;
+    padding: 0;
+    // @include grid-column(12, true, false, 0, 0, 0, false, left);
+    img {
+      padding: rem-calc(3rem);
+      border: 1px solid lighten($body-font-color, 50%);
+      margin-bottom: rem-calc(3rem);
+      @include box-shadow-default;
     }
-    figure {
-      @include grid-row(collapse);
-      margin: 0 0 1em 0;
-      padding: 0;
-//      @include grid-column(12, true, false, 0, 0, 1, false, left);
-      img {
-        @include grid-column(12);
-        padding: rem-calc(3rem);
-        border: 1px solid lighten($body-font-color, 50%);
-        margin-bottom: rem-calc(3rem);
-        @include box-shadow-default;
-      }
-      figcaption {
-        text-align: center;
-        color: lighten($body-font-color, 50%);
-        font-style: italic;
-      }
+    figcaption {
+      text-align: center;
+      color: lighten($body-font-color, 50%);
+      font-style: italic;
     }
   }
+  margin-bottom: $margin-default*2;
 }
 
 .note {
@@ -74,4 +88,12 @@ h2 {
 
 .back-to-top {
   @include button();
+}
+
+.worked_example {
+  @include panel;
+}
+
+.workstep {
+  @include box-color($primary-color);
 }

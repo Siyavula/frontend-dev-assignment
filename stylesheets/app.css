@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 /* line 348, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.0/";
@@ -184,7 +183,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 50rem;
+  max-width: 62.5rem;
 }
 /* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -5758,7 +5757,7 @@ ul.pagination li {
   /* line 168, ../lib/bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal {
     width: 80%;
-    max-width: 50rem;
+    max-width: 62.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5786,7 +5785,7 @@ ul.pagination li {
   /* line 183, ../lib/bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.tiny {
     width: 30%;
-    max-width: 50rem;
+    max-width: 62.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5796,7 +5795,7 @@ ul.pagination li {
   /* line 184, ../lib/bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.small {
     width: 40%;
-    max-width: 50rem;
+    max-width: 62.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5806,7 +5805,7 @@ ul.pagination li {
   /* line 185, ../lib/bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.medium {
     width: 60%;
-    max-width: 50rem;
+    max-width: 62.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5816,7 +5815,7 @@ ul.pagination li {
   /* line 186, ../lib/bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.large {
     width: 70%;
-    max-width: 50rem;
+    max-width: 62.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5826,7 +5825,7 @@ ul.pagination li {
   /* line 187, ../lib/bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.xlarge {
     width: 95%;
-    max-width: 50rem;
+    max-width: 62.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5846,7 +5845,7 @@ ul.pagination li {
   /* line 188, ../lib/bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.full {
     width: 100vw;
-    max-width: 50rem;
+    max-width: 62.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -7124,7 +7123,7 @@ meta.foundation-mq-topbar {
 
   /* line 479, ../lib/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 50rem;
+    max-width: 62.5rem;
     margin: 0 auto;
     margin-bottom: 0;
   }
@@ -9100,94 +9099,65 @@ th.hide-for-touch {
   }
 }
 /* line 7, ../lib/scss/app.scss */
-h1 {
+#chapter {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 50rem;
-  margin-top: 132px;
+  max-width: 62.5rem;
+}
+/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
+#chapter:before, #chapter:after {
+  content: " ";
+  display: table;
+}
+/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
+#chapter:after {
+  clear: both;
+}
+
+/* line 15, ../lib/scss/app.scss */
+#index {
+  font-size: 0.9em;
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+/* line 21, ../lib/scss/app.scss */
+#index h1 {
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 11px;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.025);
+}
+/* line 28, ../lib/scss/app.scss */
+#index ul {
+  padding: 0;
+}
+/* line 31, ../lib/scss/app.scss */
+#index li {
+  margin-bottom: 0;
+  border-bottom: 1px dotted #AAAAAA;
+}
+
+/* line 38, ../lib/scss/app.scss */
+h1 {
   margin-bottom: 44px;
   letter-spacing: 1px;
-  border-bottom: 1px solid #AAAAAA;
-}
-/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-h1:before, h1:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-h1:after {
-  clear: both;
 }
 
-/* line 17, ../lib/scss/app.scss */
-h2 {
-  width: 100%;
-  margin: 0;
-  max-width: 50rem;
-}
-/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-h2:before, h2:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-h2:after {
-  clear: both;
-}
-
-/* line 23, ../lib/scss/app.scss */
-#index h1 {
-  margin: 22px 0;
-  border: none;
-  font-size: 1.4375rem;
-  text-transform: uppercase;
-  letter-spacing: none;
-}
-
-/* line 32, ../lib/scss/app.scss */
+/* line 51, ../lib/scss/app.scss */
 .section {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 50rem;
+  margin-bottom: 44px;
 }
-/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-.section:before, .section:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-.section:after {
-  clear: both;
-}
-/* line 39, ../lib/scss/app.scss */
-.section div.section figure {
-  width: 100%;
-  margin: 0;
-  max-width: 50rem;
+/* line 55, ../lib/scss/app.scss */
+.section figure {
   margin: 0 0 1em 0;
   padding: 0;
 }
-/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-.section div.section figure:before, .section div.section figure:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-.section div.section figure:after {
-  clear: both;
-}
-/* line 44, ../lib/scss/app.scss */
-.section div.section figure img {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 100%;
-  float: left;
+/* line 59, ../lib/scss/app.scss */
+.section figure img {
   padding: 0.1875rem;
   border: 1px solid #c4c4c4;
   margin-bottom: 0.1875rem;
@@ -9195,14 +9165,14 @@ h2:after {
   -moz-box-shadow: 0 8px 6px -3px #dedede;
   box-shadow: 0 8px 6px -3px #dedede;
 }
-/* line 51, ../lib/scss/app.scss */
-.section div.section figure figcaption {
+/* line 65, ../lib/scss/app.scss */
+.section figure figcaption {
   text-align: center;
   color: #c4c4c4;
   font-style: italic;
 }
 
-/* line 60, ../lib/scss/app.scss */
+/* line 74, ../lib/scss/app.scss */
 .note {
   border-style: solid;
   border-width: 1px;
@@ -9234,14 +9204,14 @@ h2:after {
 .note h1.subheader, .note h2.subheader, .note h3.subheader, .note h4.subheader, .note h5.subheader, .note h6.subheader {
   line-height: 1.4;
 }
-/* line 63, ../lib/scss/app.scss */
+/* line 77, ../lib/scss/app.scss */
 .note p:first-of-type::before {
   content: "Note: ";
   font-weight: bold;
   font-style: normal;
 }
 
-/* line 70, ../lib/scss/app.scss */
+/* line 84, ../lib/scss/app.scss */
 .mathidentity {
   border-style: solid;
   border-width: 1px;
@@ -9276,7 +9246,7 @@ h2:after {
   line-height: 1.4;
 }
 
-/* line 75, ../lib/scss/app.scss */
+/* line 89, ../lib/scss/app.scss */
 .back-to-top {
   border-style: solid;
   border-width: 0;
@@ -9308,4 +9278,47 @@ h2:after {
 /* line 167, ../lib/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .back-to-top:hover, .back-to-top:focus {
   color: #f9f9f9;
+}
+
+/* line 93, ../lib/scss/app.scss */
+.worked_example {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #ededed;
+  color: #333333;
+}
+/* line 55, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
+.worked_example > :first-child {
+  margin-top: 0;
+}
+/* line 56, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
+.worked_example > :last-child {
+  margin-bottom: 0;
+}
+/* line 61, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
+.worked_example h1, .worked_example h2, .worked_example h3, .worked_example h4, .worked_example h5, .worked_example h6, .worked_example p, .worked_example li, .worked_example dl {
+  color: #333333;
+}
+/* line 68, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
+.worked_example h1, .worked_example h2, .worked_example h3, .worked_example h4, .worked_example h5, .worked_example h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+/* line 70, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
+.worked_example h1.subheader, .worked_example h2.subheader, .worked_example h3.subheader, .worked_example h4.subheader, .worked_example h5.subheader, .worked_example h6.subheader {
+  line-height: 1.4;
+}
+
+/* line 97, ../lib/scss/app.scss */
+.workstep {
+  background-color: #006687;
+  border: 1px solid #003f54;
+  -webkit-box-shadow: 0 8px 6px -3px #dedede;
+  -moz-box-shadow: 0 8px 6px -3px #dedede;
+  box-shadow: 0 8px 6px -3px #dedede;
+  padding: 11px 11px 0 11px;
+  margin-bottom: 22px;
 }
