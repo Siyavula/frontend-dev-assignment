@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 /* line 348, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.0/";
@@ -2387,7 +2388,7 @@ select {
 /* line 102, ../lib/bower_components/foundation/scss/foundation/components/_breadcrumbs.scss */
 .breadcrumbs > *:before {
   content: "/";
-  color: #AAAAAA;
+  color: #aaa;
   margin: 0 0.75rem;
   position: relative;
   top: 1px;
@@ -3348,7 +3349,7 @@ button::-moz-focus-inner {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #AAAAAA;
+  color: #aaa;
   font-size: 0.6em;
 }
 
@@ -5858,7 +5859,7 @@ ul.pagination li {
   position: absolute;
   top: 0.625rem;
   right: 1.375rem;
-  color: #AAAAAA;
+  color: #aaa;
   font-weight: bold;
   cursor: pointer;
 }
@@ -7635,7 +7636,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Droid Serif", "Georgia", "Tinos", serif;
   font-weight: 400;
   font-style: normal;
-  color: #AAAAAA;
+  color: #aaa;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -9098,32 +9099,12 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 7, ../lib/scss/app.scss */
-#chapter {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-}
-/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-#chapter:before, #chapter:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
-#chapter:after {
-  clear: both;
-}
-
-/* line 15, ../lib/scss/app.scss */
+/* line 11, ../lib/scss/app.scss */
 #index {
-  font-size: 0.9em;
   margin-top: 88px;
   margin-bottom: 88px;
 }
-/* line 21, ../lib/scss/app.scss */
+/* line 14, ../lib/scss/app.scss */
 #index h1 {
   font-size: 1.125rem;
   margin: 0;
@@ -9131,32 +9112,35 @@ th.hide-for-touch {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   background: rgba(0, 0, 0, 0.025);
 }
-/* line 28, ../lib/scss/app.scss */
+/* line 21, ../lib/scss/app.scss */
 #index ul {
   padding: 0;
 }
-/* line 31, ../lib/scss/app.scss */
+/* line 24, ../lib/scss/app.scss */
 #index li {
   margin-bottom: 0;
-  border-bottom: 1px dotted #AAAAAA;
+  border-bottom: 1px dotted #aaa;
 }
 
-/* line 38, ../lib/scss/app.scss */
+/* line 31, ../lib/scss/app.scss */
 h1 {
   margin-bottom: 44px;
-  letter-spacing: 1px;
+}
+/* line 33, ../lib/scss/app.scss */
+h1 .title {
+  margin-top: 88px;
 }
 
-/* line 51, ../lib/scss/app.scss */
+/* line 44, ../lib/scss/app.scss */
 .section {
   margin-bottom: 44px;
 }
-/* line 55, ../lib/scss/app.scss */
+/* line 47, ../lib/scss/app.scss */
 .section figure {
   margin: 0 0 1em 0;
   padding: 0;
 }
-/* line 59, ../lib/scss/app.scss */
+/* line 51, ../lib/scss/app.scss */
 .section figure img {
   padding: 0.1875rem;
   border: 1px solid #c4c4c4;
@@ -9165,14 +9149,14 @@ h1 {
   -moz-box-shadow: 0 8px 6px -3px #dedede;
   box-shadow: 0 8px 6px -3px #dedede;
 }
-/* line 65, ../lib/scss/app.scss */
+/* line 57, ../lib/scss/app.scss */
 .section figure figcaption {
   text-align: center;
   color: #c4c4c4;
   font-style: italic;
 }
 
-/* line 74, ../lib/scss/app.scss */
+/* line 66, ../lib/scss/app.scss */
 .note {
   border-style: solid;
   border-width: 1px;
@@ -9204,49 +9188,19 @@ h1 {
 .note h1.subheader, .note h2.subheader, .note h3.subheader, .note h4.subheader, .note h5.subheader, .note h6.subheader {
   line-height: 1.4;
 }
-/* line 77, ../lib/scss/app.scss */
+/* line 69, ../lib/scss/app.scss */
 .note p:first-of-type::before {
   content: "Note: ";
   font-weight: bold;
   font-style: normal;
 }
 
-/* line 84, ../lib/scss/app.scss */
+/* line 76, ../lib/scss/app.scss */
 .mathidentity {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #007da6;
-  margin-bottom: 1.25rem;
-  padding: 1.25rem;
-  background: #008CBA;
-  color: #f9f9f9;
-  -webkit-box-shadow: 0 8px 6px -3px #dedede;
-  -moz-box-shadow: 0 8px 6px -3px #dedede;
-  box-shadow: 0 8px 6px -3px #dedede;
-}
-/* line 55, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.mathidentity > :first-child {
-  margin-top: 0;
-}
-/* line 56, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.mathidentity > :last-child {
-  margin-bottom: 0;
-}
-/* line 64, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.mathidentity h1, .mathidentity h2, .mathidentity h3, .mathidentity h4, .mathidentity h5, .mathidentity h6, .mathidentity p, .mathidentity li, .mathidentity dl {
-  color: #f9f9f9;
-}
-/* line 68, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.mathidentity h1, .mathidentity h2, .mathidentity h3, .mathidentity h4, .mathidentity h5, .mathidentity h6 {
-  line-height: 1;
-  margin-bottom: 0.625rem;
-}
-/* line 70, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.mathidentity h1.subheader, .mathidentity h2.subheader, .mathidentity h3.subheader, .mathidentity h4.subheader, .mathidentity h5.subheader, .mathidentity h6.subheader {
-  line-height: 1.4;
+  margin: 22px 0;
 }
 
-/* line 89, ../lib/scss/app.scss */
+/* line 80, ../lib/scss/app.scss */
 .back-to-top {
   border-style: solid;
   border-width: 0;
@@ -9280,45 +9234,59 @@ h1 {
   color: #f9f9f9;
 }
 
-/* line 93, ../lib/scss/app.scss */
-.worked_example {
-  border-style: solid;
-  border-width: 1px;
-  border-color: lightgray;
-  margin-bottom: 1.25rem;
-  padding: 1.25rem;
-  background: #ededed;
-  color: #333333;
+/* line 84, ../lib/scss/app.scss */
+.question {
+  padding: 22px;
+  margin-bottom: 22px;
+  border: 1px dotted #aaa;
 }
-/* line 55, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.worked_example > :first-child {
-  margin-top: 0;
-}
-/* line 56, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.worked_example > :last-child {
-  margin-bottom: 0;
-}
-/* line 61, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.worked_example h1, .worked_example h2, .worked_example h3, .worked_example h4, .worked_example h5, .worked_example h6, .worked_example p, .worked_example li, .worked_example dl {
-  color: #333333;
-}
-/* line 68, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.worked_example h1, .worked_example h2, .worked_example h3, .worked_example h4, .worked_example h5, .worked_example h6 {
-  line-height: 1;
-  margin-bottom: 0.625rem;
-}
-/* line 70, ../lib/bower_components/foundation/scss/foundation/components/_panels.scss */
-.worked_example h1.subheader, .worked_example h2.subheader, .worked_example h3.subheader, .worked_example h4.subheader, .worked_example h5.subheader, .worked_example h6.subheader {
-  line-height: 1.4;
+/* line 88, ../lib/scss/app.scss */
+.question p {
+  font-weight: bold;
 }
 
+/* line 93, ../lib/scss/app.scss */
+.worked_example {
+  margin: 22px 0;
+}
 /* line 97, ../lib/scss/app.scss */
+.worked_example .workstep {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+}
+/* line 172, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
+.worked_example .workstep:before, .worked_example .workstep:after {
+  content: " ";
+  display: table;
+}
+/* line 173, ../lib/bower_components/foundation/scss/foundation/components/_global.scss */
+.worked_example .workstep:after {
+  clear: both;
+}
+/* line 50, ../lib/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.worked_example .workstep > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+/* line 61, ../lib/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.worked_example .workstep > li {
+  width: 50%;
+  padding: 0 0.625rem 1.25rem;
+  list-style: none;
+}
+/* line 68, ../lib/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.worked_example .workstep > li:nth-of-type(1n) {
+  clear: none;
+}
+/* line 69, ../lib/bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.worked_example .workstep > li:nth-of-type(2n+1) {
+  clear: both;
+}
+
+/* line 102, ../lib/scss/app.scss */
 .workstep {
-  background-color: #006687;
-  border: 1px solid #003f54;
-  -webkit-box-shadow: 0 8px 6px -3px #dedede;
-  -moz-box-shadow: 0 8px 6px -3px #dedede;
-  box-shadow: 0 8px 6px -3px #dedede;
-  padding: 11px 11px 0 11px;
-  margin-bottom: 22px;
+  margin: 22px 0;
 }

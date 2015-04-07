@@ -1,21 +1,14 @@
 @import "settings";
 @import "foundation";
 @import "mixins";
-// @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 
 // Global page structure (grid setup)
-#chapter {
-  @include grid-row();
-}
+#chapter {}
 
-.wrapper {
-  // @include grid-column(9, true, false, 0, 0, 0, right);
-}
+.wrapper {}
 
-#index {
-  font-size: 0.9em;
-  // @include grid-column(3, true, false, 0, 0, 0, left);
-  // position: fixed;
+#index {    
   margin-top: $margin-default*4;
   margin-bottom: $margin-default*4;
   h1 {
@@ -37,9 +30,9 @@
 // Basic HTML selectors (not handled by _settings)
 h1 {
   margin-bottom: $margin-default*2;
-  // text-transform: uppercase;
-  letter-spacing: 1px;
-  // border-bottom: 1px solid $header-font-color;
+  .title {
+    margin-top: $margin-default*4;
+  }
 }
 
 h2 {
@@ -49,9 +42,8 @@ h2 {
 }
 
 .section {
-  h1.title {
-    // @include grid-column(11, true, false, 1, 0, 0, false, left);
-  }
+  // @include grid-column(12, false, false, 0, 0, 0, left);
+  // @include grid-row;
   figure {
     margin: 0 0 1em 0;
     padding: 0;
@@ -82,18 +74,36 @@ h2 {
 }
 
 .mathidentity {
-  @include panel($primary-color);
-  @include box-shadow-default;
+  margin: $margin-default 0;
 }
 
 .back-to-top {
   @include button();
 }
 
+.question {
+  padding: $margin-default;
+  margin-bottom: $margin-default;
+  border: 1px dotted $base;
+  p {
+    font-weight: bold;
+  }
+}
+
 .worked_example {
-  @include panel;
+  margin: $margin-default 0;
+  .question {
+  }
+  .workstep {
+    @include block-grid(2);
+  }
 }
 
 .workstep {
-  @include box-color($primary-color);
+  margin: $margin-default 0;
+  
+}
+
+.exercises {
+  
 }
