@@ -1,0 +1,109 @@
+@import "settings";
+@import "foundation";
+@import "mixins";
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+// Global page structure (grid setup)
+#chapter {}
+
+.wrapper {}
+
+#index {    
+  margin-top: $margin-default*4;
+  margin-bottom: $margin-default*4;
+  h1 {
+    font-size: $h5-font-size;
+    margin: 0;
+    padding: $margin-default/2;
+    font-family: $font-family-sans-serif;
+    background: darken($side-nav-link-bg-hover, 10%);
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    margin-bottom: 0;
+    border-bottom: 1px dotted $base;
+  }
+}
+
+// Basic HTML selectors (not handled by _settings)
+h1 {
+  margin-bottom: $margin-default*2;
+  .title {
+    margin-top: $margin-default*4;
+  }
+}
+
+h2 {
+}
+
+.section:first-child {
+}
+
+.section {
+  // @include grid-column(12, false, false, 0, 0, 0, left);
+  // @include grid-row;
+  figure {
+    margin: 0 0 1em 0;
+    padding: 0;
+    // @include grid-column(12, true, false, 0, 0, 0, false, left);
+    img {
+      padding: rem-calc(3rem);
+      border: 1px solid lighten($body-font-color, 50%);
+      margin-bottom: rem-calc(3rem);
+      @include box-shadow-default;
+    }
+    figcaption {
+      text-align: center;
+      color: lighten($body-font-color, 50%);
+      font-style: italic;
+    }
+  }
+  margin-bottom: $margin-default*2;
+}
+
+.note {
+  @include panel;
+  font-style: italic;
+  p:first-of-type::before {
+    content: "Note: ";
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.mathidentity {
+  margin: $margin-default 0;
+}
+
+.back-to-top {
+  @include button();
+}
+
+.question {
+  padding: $margin-default;
+  margin-bottom: $margin-default;
+  border: 1px dotted $base;
+  p {
+    font-weight: bold;
+  }
+}
+
+.worked_example {
+  margin: $margin-default 0;
+  .question {
+  }
+  .workstep {
+    @include block-grid(2);
+  }
+}
+
+.workstep {
+  margin: $margin-default 0;
+  
+}
+
+.exercises {
+  
+}
